@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+		/* 伪元素可以看作是行内元素：不支持设置宽高 */
+		span::before {
+			content: "1";
+			color: red;
+			width: 100px;
+			height: 30px;
+			display: inline-block;
+			margin-right: 20px;
+			background-color: #f00;
+		}
+
+		span::after {
+			content: url("../01_HTML基本元素/1-1Z409111Q4436.jpeg");
+			margin-left: 10px;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<span>我是一个span元素</span>
+
+</body>
+</html>

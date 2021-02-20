@@ -7,31 +7,34 @@
 	<title>Document</title>
 
 	<style>
-		div span {
+		/* div :only-child {
+			color: rebeccapurple;
+		} */
+
+		div :only-of-type {
 			color: red;
 		}
+
 
 	</style>
 
 </head>
 <body>
 	
-	<span>文本文案1</span>
 	<div>
-		<span>文本文案2</span>
-		<p>文本文案3</p>
+		<p>
+			<span>文字内容1</span>
+		</p>
+		<div>文字内容2</div>
+		<div>文字内容3</div>
 	</div>
 
 	<div>
-		<span>文本文案4</span>
-	</div>
-
-	<span>文本文案5</span>
-
-	<div>
+		<strong>文字内容3</strong>
 		<a href="#">
-			<span>文本文案6</span>
+			<span>文字内容4</span>
 		</a>
 	</div>
+
 </body>
 </html>
