@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+		div {
+			line-height: 40px;
+			background-color: rgb(223, 13, 13);
+		}
+	</style>
+</head>
+<body>
+	<!-- code-->
+	<p>这是一段代码 <code> function sum() {} </code> </p>
+
+	<p>
+		<div>每种语言发展到一个阶段，就会出现相应的依赖管理工具，例如Java语言的Maven，Node.js的npm,C#的Nuget。</div>
+		随着iOS开发者的增多，业界也出现了为iOS程序提供依赖管理的工具，它的名字叫做：CocoaPods。CocoaPods项目的源码在Github上管理。
+		该项目开始于2011年8月12日，经过多年发展，现在已经成为iOS开发事实上的依赖管理标准工具。<br>
+		开发iOS项目不可避免地要使用第三方开源库，CocoaPods的出现使得我们可以节省设置和更新第三方开源库的时间。
+		在我开发猿题库客户端时，其使用了24个第三方开源库。<br>
+		<hr color="red">
+		在没有使用CocoaPods以前，我需要:把这些第三方开源库的源代码文件复制到项目中，或者设置成git的submodule。<br>
+		对于这些开源库通常需要依赖系统的一些framework，我需要手工地将这些framework一一增加到项目依赖中，
+		比如通常情况下，一个网络库就需要增加以下framework: CFNetwork, SystemConfiguration, MobileCoreServices, 
+		CoreGraphics, zlib。对于某些开源库，我还需要设置-licucore或者 -fno-objc-arc等编译参数管理这些依赖包的更新。
+		这些体力活虽然简单，但毫无技术含量并且浪费时间。<br>
+		在使用CocoaPods之后，我只需要将用到的第三方开源库放到一个名为Podfile的文件中，
+		然后执行pod install。CocoaPods就会自动将这些第三方开源库的源码下载下来，
+		并且为我的工程设置好相应的系统依赖和编译参数。
+
+	</p>
+
+	<!-- hr -->
+	<div class="box">   </div>
+
+</body>
+</html>

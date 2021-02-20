@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		[title] {
+			color: red;
+		}
+
+		[title="one div元素"] {
+			font-size: 25px;
+		}
+
+		[title*="one"] {
+			background-color: green;
+		}
+
+		[title^="one"] {
+			text-decoration: line-through;
+		}
+
+		[title$="one"] {
+			text-decoration: overline;
+		}
+
+		[title|="one"] {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	
+	<div title="one div元素">我是div元素</div>
+	<p title="p元素">我是p元素</p>
+	<p title="p one">我是p元素</p>
+	<p title="p one-元素">我是p元素</p>
+	<p title="one-元素">我是p元素</p>
+	<p>我是p元素</p>
+	<span title="one span元素">我是span元素</span>
+
+</body>
+</html>

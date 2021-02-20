@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		a:link {
+			color: red;
+		}
+
+		a:visited {
+			color: #333;
+		}
+
+/* 去除a元素的聚焦状态 */
+		a:focus {
+			/* color: tan; */
+			outline: none;
+		}
+
+		a:hover {
+			color: sandybrown;
+		}
+
+		a:active {
+			color: seagreen;
+		}
+
+		strong:hover {
+			background-color: #00f;
+		}
+
+		strong:active {
+			font-size: 40px;
+		}
+
+		input:focus {
+			background-color: teal;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<a tabindex="-1" href="#">百度一下</a>
+
+	<strong>我是Strong元素</strong>
+
+	<input type="text">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<a href="https://www.baidu.com">百度一下</a>
+	<a href="https://www.jd.com">京东一下</a>
+	
+
+	<!-- 
+		target:
+			_self: 自己当前页面打开
+			_black: 空白
+
+			_prarent
+			_top
+
+	-->
+	<a href="https://www.jd.com" target="_self">京东一下</a>
+	<a href="https://www.jd.com" target="_black">京东一下</a>
+
+	<!-- 打开自己的网站-->
+	<a href="./13_img元素的其他属性.html" target="_black">京东一下</a>
+	<p> _pranetn 和iframe一起使用才有效果</p>
+	<a href="./13_img元素的其他属性.html" target="_prarent">京东一下</a>
+
+	<p> _top 和iframe一起使用才有效果</p>
+	<a href="./13_img元素的其他属性.html" target="_top">京东一下</a>
+</body>
+</html>
