@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+		/* ul {
+			margin-left: 100px;
+			list-style-image: url("../01_HTML基本元素/1-1Z409111Q4436.jpeg");
+
+			list-style-position
+			list-style-position: outside;
+		} */
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		ul li {
+			margin-top: 5px;
+		}
+
+		ul li span {
+			background-color: gray;
+			color: white;
+			padding: 0 5px;
+		}
+
+		li:nth-of-type(-n+3)>span {
+			background-color: red;
+			color: white;
+			padding: 0 5px;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<h2>热门车系</h2>
+	<ul>
+		<li> <span>1</span> 宝马</li>
+		<li> <span>2</span> 奔驰</li>
+		<li> <span>3</span> 劳斯莱斯</li>
+		<li> <span>4</span> 马萨拉蒂</li>
+		<li> <span>5</span> 卡宴</li>
+	</ul>
+
+</body>
+</html>
