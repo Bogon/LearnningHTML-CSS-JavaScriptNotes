@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function fnMyAlert() {
+			alert('吃饭了！');
+		}
+
+		// 创建只执行一次的定时器, 第一个参数是函数，第二个参数是毫秒数，不用带时间单位
+		var oTimer = setTimeout(fnMyAlert, 2000);
+		// 关闭只执行一次的定时器
+		clearInterval(oTimer);
+
+		// 创建反复执行的定时器
+		var oTimer02 = setInterval(fnMyAlert, 2000);
+		// 关闭反复执行的定时器
+		clearInterval(oTimer02);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
