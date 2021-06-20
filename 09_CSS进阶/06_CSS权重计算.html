@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		/* 权重1 */
+		div{
+			color: blueviolet;
+		}
+
+		/* 权重1 */
+		h3 {
+			color: lime;
+		}
+
+		/* 权重 10 */
+		.con {
+			color: brown;
+		}
+
+		/* 权重10 */
+		.box {
+			color: lightseagreen;
+		}
+
+		/* 权重：10 + 10 + 1 */
+		.con .box h3 {
+			color: mediumblue;
+		}
+
+		/* 权重：10 + 1 */
+		.box h3 {
+			color: mediumorchid;
+		}
+
+		/* 权重：1 + 10 + 10 + 1 */
+		body .con .box h3 {
+			color: navajowhite;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<!-- style 权重1000 -->
+	<div style="color: blue;">这是个div</div>
+
+	<div class="con">
+		<div class="box">
+			<h3>这是一个标题</h3>
+		</div>
+	</div>
+</body>
+</html>

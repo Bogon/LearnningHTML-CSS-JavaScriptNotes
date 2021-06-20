@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.con {
+			width: 300px;
+			height: 100px;
+			background-color: burlywood;
+			margin: 50px auto;
+
+			/* 在父类上设置子级超出部分如何显示 
+				visible: 显示
+				hidden: 隐藏超出部分
+				scroll: 不管子视图是否超出俯视图，滚动条都显示可滚动显示
+				auto: 子元素的尺寸动态显示滚动条
+			*/
+			overflow: auto;
+		}
+
+		.box {
+			width: 400px;
+			height: 500px;
+			margin: 10px 10px;
+			background-color: chartreuse;
+		}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="box">
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.search-form {
+			width: 602px;
+			height: 42px;
+			background-color: gold;
+			margin: 100px auto;
+		}
+
+		.input-text {
+			width: 500px;
+			height: 40px;
+			border: 1px solid #0fad10;
+			/* 清除输入框默认的padding值 */
+			padding: 0px;
+			/* 通过浮动解决默认间距和基线对其 */
+			float: left;
+			/* 文字缩进 */
+			text-indent: 12px;
+			/* 去掉点击输入框点击时显示的高亮颜色 */
+			outline: none;
+		}
+
+		.input-sub {
+			width: 100px;
+			height: 42px;
+			background-color: #0fad10;
+			/* 去掉按钮默认的边框 */
+			border: 0px;
+			color: white;
+			/* 通过浮动解决默认间距和基线对其 */
+			float: left;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		https://www.google.com/complete/search?q=1&cp=1&client=gws-wiz&xssi=t&gs_ri=gws-wiz&hl=zh-CN&authuser=0&psi=gMbNYPD3OoW94-EPo9GAsA4.1624098433017&dpr=2.200000047683716
+	 -->
+	<form  class="search-form" action="https://www.google.com"> 
+		<!-- 设置输入框默认的输入提示文字 -->
+		<input name="q" type="text" class="input-text" placeholder="请输入提示文字">
+		<input type="submit" value="搜 索" class="input-sub">
+	</form>
+</body>
+</html>

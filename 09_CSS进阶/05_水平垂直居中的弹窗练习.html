@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.pop {
+			width: 500px;
+			height: 300px;
+			border: 1px solid black;
+			background-color: white;
+
+			position: fixed;
+			left: 50%;
+			margin-left: -251px;
+			top: 50%;
+			margin-top: -151px;
+
+			z-index: 99999;
+			
+		}
+
+		.mask {
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			position: fixed;
+			left: 0%;
+			top: 0%;
+			opacity: 0.3;
+			filter: alpha(opacity=30);
+
+			z-index: 99998;
+		}
+
+		.pop-con {
+			display: none;
+		}
+
+	</style>
+
+</head>
+<body>
+	<h1>页面内容</h1>
+	<div class="pop-con" style="display: block;">
+		<div class="pop">
+
+			<h3>弹窗标题</h3>
+			<p>弹窗内容</p>
+		</div>
+	
+		<div class="mask"></div>
+	</div>
+	
+</body>
+</html>

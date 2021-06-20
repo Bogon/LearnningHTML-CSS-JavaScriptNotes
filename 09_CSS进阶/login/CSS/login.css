@@ -1,0 +1,39 @@
+body {
+	margin: 0px;
+}
+
+
+.header {
+	width: 952px;
+	height: 103px;
+	margin: 0px auto;
+	padding-top: 31px;
+}
+
+.login_bg {
+	height: 482px;
+	background-color: #518e17;
+}
+
+.center_wrap {
+	width: 942px;
+	height: 482px;
+	margin: 0px auto;
+}
+
+.banner {
+	float: left;
+	margin-top: 90px;
+}
+
+.slogn {
+	color: #f0f9e8;
+	font-size: 30px;
+	font-family: "Microsoft YaHei";
+	width: 30px;
+	height: 300px;
+	float: left;
+	text-align: center;
+	line-height: 36px;
+	margin: 100px 0px 0px 115px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+		.con{
+			width: 500px;
+			height: 300px;
+			border: 1px solid black;
+
+			margin: 50px auto;
+
+			position: relative;
+			overflow: hidden;
+		}
+
+		.box01,.box02,.box03{
+			width: 200px;
+			height: 60px;
+			margin: 10px;
+		}
+
+		.box01 {
+			background-color: lightblue;
+			
+			/* 设置相对定位 */
+			position: fixed;
+
+			left: 50px;
+			top: 50px;
+		}
+
+		.box02 {
+			background-color: lightgray;
+		}
+
+		.box03 {
+			background-color: lightskyblue;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<div class="con">
+		<div class="box01">1</div>
+		<div class="box02">2</div>
+		<div class="box03">3</div>
+	</div>
+
+</body>
+</html>
