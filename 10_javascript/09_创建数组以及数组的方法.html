@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		// 创建数组的第一种方式
+		var aList = new Array(1,2,3,4);
+
+		// 直接创建数组
+		var aList01 = [1,2,3,4,5,6];
+
+		// 获取数组的个数
+		var ILeng = aList01.length;
+
+		/// 操作数组的某个元素
+		aList01[0] = 12;
+
+		/// 在数组后添加成员
+		aList01.push(13);
+
+		/// 删除成员
+		aList01.pop();
+
+		// 翻转数组
+		var aList02 = aList01.reverse();
+
+		// 获取某个成员第一次出现的索引信息
+		var iIndex = aList01.indexOf(2);
+
+		/// 将数组拼接成字符串
+		var sTr01 = aList01.join(',');
+
+		/// 在数组中同时删除某个成员和添加元素
+		aList01.splice(2,2,5,6,7,8,9,12,45);
+		alert(aList01);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

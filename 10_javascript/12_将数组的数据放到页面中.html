@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.list{
+			width: 300px;
+			list-style: none;
+			padding: 0px;
+			margin: 50px auto;
+		}
+
+		.list li {
+			line-height: 50px;
+			border-bottom: 1px solid black;
+		}
+	</style>
+	<script>
+		window.onload = function() {
+			var aList = ["红楼梦", "金瓶梅", "水浒传", "三国", "西游记"];
+			var sTr = '';
+			for (index in aList) {
+				sTr += '<li>'+ aList[index] + '</li>'
+			}
+
+			//alert(sTr);
+			var oUl = document.getElementById("list");
+			oUl.innerHTML = sTr;
+		}
+	</script>
+</head>
+<body>
+	<ul class="list", id="list">
+		
+	</ul>
+</body>
+</html>

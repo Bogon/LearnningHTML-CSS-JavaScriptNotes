@@ -1,0 +1,13 @@
+body {
+	background-color: lightcyan;
+}
+
+input {
+	width: 200px;
+	height: 50px;
+	background-color: pink;
+	border-radius: 8px;
+	border: 0px;
+	color: white;
+	outline: none;
+}
