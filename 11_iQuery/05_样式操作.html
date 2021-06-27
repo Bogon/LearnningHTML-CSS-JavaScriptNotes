@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<style>
+		.red {
+			color: red;
+		}
+
+		.big {
+			font-size: 30px;
+		}
+
+		.online {
+			text-decoration: none;
+		}
+	</style>
+	<script>
+		$(function() {
+			var $div = $('#div01');
+			var $div02 = $('div');
+			var $a01 = $('#a01');
+
+			$div.css({'font-size': '30px', 'color': 'red'});
+
+			var iSize = $div02.css('font-size');
+			// alert(iSize);
+
+			/// 添加属性值 操作样式类名
+			$a01.addClass('red big online');
+
+			/// 删除样式
+			$a01.removeClass('red');
+
+		})
+		
+
+	</script>
+</head>
+<body>
+	<div id="div01">这是一个div</div>
+	<div>这是第二个div</div>
+	<a href="#" id="a01">这是一个链接</a>
+</body>
+</html>

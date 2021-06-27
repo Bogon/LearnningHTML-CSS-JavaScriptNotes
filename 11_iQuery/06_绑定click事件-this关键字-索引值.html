@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+			var $li = $('.list li');
+			var $p = $('p');
+
+			/// 绑定click事件
+			$li.click(function() {
+				/// this表示当前发生事件的对象，它是一个原生对象
+				/// this.style.background = 'red';
+				/// $(this) 表示当前发生事件的jquery对象
+				$(this).css({'color':'red'});
+
+				/// 获取点击当前li的索引值
+				//alert($(this).index());
+			})
+
+			alert($p.eq(0).index());
+			alert($p.eq(1).index());
+		})
+	</script>
+</head>
+<body>
+	<ul class="list">
+		<li>列表文字</li>
+		<li>列表文字</li>
+		<li>列表文字</li>
+		<li>列表文字</li>
+		<li>列表文字</li>
+		<li>列表文字</li>
+		<li>列表文字</li>
+		<li>列表文字</li>
+	</ul>
+
+	<div>
+		<p>这是一个段落</p>
+	</div>
+
+	<div>
+		<p>这是二个段落</p>
+	</div>
+
+</body>
+</html>

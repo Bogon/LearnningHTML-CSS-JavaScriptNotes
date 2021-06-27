@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		/// 定义全局变量
+		var iNumber= 12;
+
+		/// 函数内部使用全局变量
+		function fnCallParams() {
+			/// 定义局部变量
+			var iNumber02= 24;
+
+			/// 使用全局变量
+			alert(iNumber);
+
+			/// 使用局部变量
+			alert(iNumber02);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

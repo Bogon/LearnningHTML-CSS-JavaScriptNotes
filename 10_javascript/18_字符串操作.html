@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<script>
+
+		var iNum01 = 12;
+		var iNum02 = 12.23;
+		var sNum01 = '01';
+		var sNum02 = '12.12';
+
+		// alert(iNum01 + 10);
+		// alert(iNum02 + 10);
+
+		/// 将整数字符串转换成整数，使用parseInt()方法
+		// alert(parseInt(sNum01) + 20);
+		// alert(parseInt(sNum02) + 20);
+
+		/// 将小数字符串转换成小数
+		// alert(parseFloat(sNum02) + 12.12);
+
+		/// 将字符串分隔成数组
+		// alert(sNum02.split('.'));
+
+		/// 在大段字符串中获取一小段字符
+		var sTr = 'iuashdiuqhwdiuqwhdiuq1287niasniuxnasioxnh2w7hds28hd827hd';
+		var iPos = sTr.indexOf('ua');
+		// alert(iPos);
+
+		/// 字符串切片
+		var sSubStr = sTr.substring(21,25);
+		// alert(sSubStr);
+		
+
+		/// 字符串翻转
+		var sRes = sTr.split('').reverse().join('')
+		alert(sRes);
+
+	</script>
+
+</head>
+<body>
+	
+</body>
+</html>
