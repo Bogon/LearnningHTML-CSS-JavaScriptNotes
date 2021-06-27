@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		var sJson = '{"name": "tom", "age": 24, "hobby": ["study", "learnning", "play"],\
+			"school": {"name": "beida", "location": "beijing"}\
+		}';
+		// 将json字符串转成js对象
+		var oJson = JSON.parse(sJson);
+		alert(oJson.name);
+		alert(oJson.hobby[0]);
+		alert(oJson.school.location);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
