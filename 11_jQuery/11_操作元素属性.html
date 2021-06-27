@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+			var $link01 = $('#link01');
+
+			/// 读取属性
+			var sId = $link01.prop('id');
+			// alert(sId);
+
+			/// 写属性值 也叫做设置属性值
+			$link01.prop({'href': 'https://www.baidu.com', 'title': '是去掉百度的链接'});
+
+			/// 读取元素包裹的内容
+			var sTr = $link01.html();
+			// alert(sTr);
+
+			/// 设置元素包裹的内容
+			$link01.html('百度网');
+			$link01.html('<ul><li>类表内容</li><li>类表内容</li><li>类表内容</li><li>类表内容</li></ul>');
+		});
+
+	</script>
+</head>
+<body>
+	<a href="#" id="link01">这是一个链接</a>
+</body>
+</html>
