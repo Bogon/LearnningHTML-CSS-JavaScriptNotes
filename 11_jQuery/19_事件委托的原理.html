@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+			var $list = $('#list');
+			// 事件委托：通过事件冒泡的原理，将子视图的事件冒泡到父视图，让父视图来处理子视图的事件
+			// 事件仅绑定一次，性能会很高
+			$list.delegate('li', 'click', function() {
+				$(this).css({'color': 'red'});
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul id="list">
+		<li>列表内容</li>
+		<li>列表内容</li>
+		<li>列表内容</li>
+		<li>列表内容</li>
+		<li>列表内容</li>
+		<li>列表内容</li>
+		<li>列表内容</li>
+		<li>列表内容</li>
+	</ul>
+</body>
+</html>
