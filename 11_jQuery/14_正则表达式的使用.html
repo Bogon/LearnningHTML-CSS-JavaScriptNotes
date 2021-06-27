@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		// 定义一个正则表达式
+		var reTest01 = /a/;
+		var reTest02 = /a/i;
+		var reTest03 = /\d+/;
+		var reTest04 = /^\d+$/;			/// 限制开头和结尾
+
+		var sTr01 = 'abc';
+		var sTr02 = 'ABC';
+		var sTr03 = '12343534';
+		var sTr04 = '12343534asdasdas';
+
+		// alert(reTest01.test(sTr01));
+		// alert(reTest01.test(sTr02));
+		// alert(reTest02.test(sTr01));
+		// alert(reTest02.test(sTr02));
+		// alert(reTest03.test(sTr03));
+		// alert(reTest03.test(sTr04));
+		alert(reTest04.test(sTr03));
+		alert(reTest04.test(sTr04));
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

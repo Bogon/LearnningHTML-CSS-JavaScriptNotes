@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+			margin: auto;
+		}
+		.box2 {
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+	</style>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+			var $input = $('#input01');
+			var $box = $('.box');
+
+			// 鼠标移入和移出事件绑定
+			/*
+			$input.mouseenter(function() {
+				console.log('input鼠标移入');
+				$(this).stop().animate({'margin-top': 100});
+			}).mouseout(function() {
+				console.log('input鼠标移出');
+				$(this).stop().animate({'margin-top': 0});
+			});
+
+			// 在子视图上不会触发移入移出事件
+			$box.mouseenter(function() {
+				console.log('box鼠标移入');
+				$(this).stop().animate({'margin-top': 100});
+			}).mouseleave(function() {
+				console.log('box鼠标移出');
+				$(this).stop().animate({'margin-top': 0});
+			});	*/
+
+			// mouserover和mouseout事件，也会触发事件
+			$box.mouseover(function() {
+				$(this).stop().animate({'margin-top': 100});
+			}).mouseout(function() {
+				$(this).stop().animate({'margin-top': 0});
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div class="box2"></div>
+	</div>
+	<input type="text" id="input01">
+</body>
+</html>
