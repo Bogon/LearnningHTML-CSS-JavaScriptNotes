@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+			var $p01 = $('#p01');
+			var $div = $('#div01');
+			var $h01 = $('#h01');
+			var $p02 = $('#p02');
+
+			// 当前元素的里面的后面要放另外一个元素
+			// $div.append($p01);
+
+			// 当前元素放到另外一个元素的里面的后面
+			// $p01.appendTo($div);
+
+			// 当前元素里面的前面放另外一个元素
+			// $div.prepend($h01);
+
+			// 当前元素放到另外一个元素的里面的前面
+			// $h01.prependTo($div);
+
+			// 当前元素的外面的后面放到另外元素
+			// $div.after($p02);
+
+			// 当前元素放到另外一个元素的后面的外面
+			// $p02.insertAfter($div);
+
+			// 创建一个空的新的div标签
+			var $newDiv01 = $('<div></div>');
+
+			// 创建一个有内容的div标签
+			var $newDiv02 = $('<div>新创建的第二个div标签</div>');
+
+			// 当前的元素的外面的前面方另外一个元素
+			$div.before($newDiv01);
+
+			// 当前元素放在另外一个元素的外面的前面
+			$newDiv02.insertBefore($div);
+
+			// 删除标签
+			$newDiv01.remove();
+
+			$h01.remove();
+		});
+	</script>
+</head>
+<body>
+	<p id="p02">div上面的p标签</p>
+	<p id="p01">div01外面的p标签</p>
+	<h2 id="h01">div01外面的h2标签</h2>
+	<div id="div01">
+		<h3>div01里面的h3标题</h3>
+		<p>div01里面的p标签</p>
+	</div>
+
+</body>
+</html>
