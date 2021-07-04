@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		/*
+		$.ajax({
+			url: 'js/data01.json',
+			type: 'get',
+			dataType: 'json',
+			success: function(dat01) {
+				// console.log(dat1);
+				$.ajax({
+					url: 'js/data02.json',
+					type: 'get',
+					dataType: 'json',
+					success: function(dat02) {
+						console.log([dat01, dat02]);
+						
+					},
+					error: function (error) {
+						console.log(error);
+					}
+				});
+			},
+			error: function (error) {
+				console.log(error);
+			  }
+		});
+		*/
+		// promise 实现
+		let pro01 = new Promise(function(resolve, reject) {
+			$.ajax({
+				url: 'js/data01.json',
+				type: 'get',
+				dataType: 'json',
+				success: function(dat01) {
+					// console.log(dat1);
+					resolve(dat01);
+				},
+				error: function (error) {
+					// console.log(error);
+					reject(error);
+				}
+			});
+		});
+
+		pro01.then(function(data01) {
+			console.log(data01);
+		}).catch(function (err) {
+			console.log(err);
+		});
+
+		let pro02 = new Promise(function(resolve, reject) {
+			$.ajax({
+				url: 'js/data02.json',
+				type: 'get',
+				dataType: 'json',
+				success: function(dat02) {
+					// console.log([dat01, dat02]);
+					resolve(dat02);
+				},
+				error: function (error) {
+					// console.log(error);
+					reject(error);
+				}
+			});
+		});
+
+		Promise.all([pro01, pro02]).then(re => {
+			console.log(re);
+		});
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

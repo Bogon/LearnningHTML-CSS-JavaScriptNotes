@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		var aList = [12,32,25,65,52];
+		// aList.map(function(e) {
+		// 	console.log(e);
+		// })
+		// map 方法
+		aList.map((e, i) => {
+			console.log(i + "|" + e);
+		})
+
+		// 连接形成一个新的数组
+		var aList2 = aList.concat(43,78);
+		console.log(aList2);
+
+		var aList3 = [1,2];
+		var aList4 = aList.concat(aList3);
+		console.log(aList4);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

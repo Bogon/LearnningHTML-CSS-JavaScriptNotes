@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+
+		// 使用class 关键字定义一个类
+		class Person {
+			constructor(name, age) {
+				this.name = name
+				this.age = age
+			}
+
+			showName() {
+				console.log("my name is " + this.name);
+			}
+
+			showAge() {
+				console.log("My age is " + this.age);
+			}
+		}
+
+		// 通过类来实例化一个对象
+		let p1 = new Person('Tom', 20);
+		p1.showName();
+		p1.showAge();
+
+		// 定义类继承Person
+		class Student extends Person {
+			constructor(name, age, school) {
+				super(name, age);
+				this.school = school;
+			}
+
+			showSchool() {
+				console.log("My school is " + this.school);
+			}
+		}
+
+		let s1 = new Student("jerry", 20, "TU");
+		s1.showName();
+		s1.showAge();
+		s1.showSchool();
+		
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

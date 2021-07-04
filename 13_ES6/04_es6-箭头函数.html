@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		// function fnAdd(a, b) {
+		// 	var rs = a + b
+		// 	alert(rs);
+		// }
+
+		// 通过匿名函数复制的形式定义函数
+		// let fnAdd = function (a, b) {
+		// 	var rs = a + b
+		// 	alert(rs);
+		// };
+
+		// 通过箭头函数的形式定义函数
+		let fnAdd = (a, b) => {
+			var rs = a + b
+			alert(rs);
+		};
+
+		let fnAlert = a => {
+			alert(a);
+		}
+
+		let fnAlert2 = () => {
+			alert('hello');
+		}
+
+		// fnAdd(10,5);
+		// fnAlert(12);
+		// fnAlert2(12);
+
+		// let fnReturn = function (a,b) { 
+		// 	return a + b;
+		// }
+
+		// let fnReturn = (a,b) => { 
+		// 	return a + b;
+		// }
+
+		let fnReturn = (a,b) => a + b
+		let fnReturn2 = (a,b) => ({'name': a, 'age': b})
+
+		let rs = fnReturn(12,13);
+		// alert(rs);
+
+		let rs2 = fnReturn2("tom",13);
+		// alert(rs2);
+			console.log(rs2);
+
+		let person = {
+			name: "tom",
+			age: 20,
+			showName: function() {
+				setTimeout(() => {	/// 改成箭头函数，获取到this就是当前函数，如果是一般的匿名函数就是window对象
+					console.log(`my name is ${this.name}`);
+				}, 2000)
+			}
+		}
+		person.showName();
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

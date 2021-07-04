@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/react.development.js"></script>
+	<script src="js/react-dom.development.js"></script>
+	<script src="js/babel.min.js"></script>
+</head>
+<body>
+	<div id="root"></div>
+
+	<script type="text/babel">
+		let iNum01= 10;
+		var sTr = "sjahbdiuasdhiabsidu";
+		var ok = true;
+
+		function fnRev(s) { 
+			return s.split('').reverse().join('');
+		}
+
+		let e1 = (
+			<div>
+				<h2>jsx语法</h2>
+				<p>{iNum01+5}</p>
+				<p>{ sTr }</p>
+				<p>{ sTr.split('').reverse().join('') }</p>
+				<p> { fnRev('wiudshiuwedhiwehiud') } </p>
+				<p> { ok ? "yes" : "false" } </p>
+			</div>
+		);
+		ReactDOM.render(e1, document.getElementById("root"));
+	</script>
+</body>
+</html>
