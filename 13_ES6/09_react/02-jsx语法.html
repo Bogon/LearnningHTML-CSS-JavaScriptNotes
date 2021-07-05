@@ -8,6 +8,13 @@
 	<script src="js/react.development.js"></script>
 	<script src="js/react-dom.development.js"></script>
 	<script src="js/babel.min.js"></script>
+
+	<style>
+		.sty01 {
+			font-size: 30px;
+			color: red;
+		}
+	</style>
 </head>
 <body>
 	<div id="root"></div>
@@ -16,6 +23,7 @@
 		let iNum01= 10;
 		var sTr = "sjahbdiuasdhiabsidu";
 		var ok = true;
+		let url = "https://www.baidu.com";
 
 		function fnRev(s) { 
 			return s.split('').reverse().join('');
@@ -23,12 +31,14 @@
 
 		let e1 = (
 			<div>
+				{/* 这是jsx中的注释 */}
 				<h2>jsx语法</h2>
 				<p>{iNum01+5}</p>
 				<p>{ sTr }</p>
 				<p>{ sTr.split('').reverse().join('') }</p>
 				<p> { fnRev('wiudshiuwedhiwehiud') } </p>
 				<p> { ok ? "yes" : "false" } </p>
+				<a href={url} className="sty01">这是一个标签</a>
 			</div>
 		);
 		ReactDOM.render(e1, document.getElementById("root"));

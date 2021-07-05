@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/react.development.js"></script>
+	<script src="js/react-dom.development.js"></script>
+	<script src="js/babel.min.js"></script>
+
+</head>
+<body>
+	<div id="root"></div>
+
+	<script type="text/babel">
+
+		// 定义click事件的处理方法
+		class HelloName extends React.Component {
+
+			fnHello() {
+				console.log("hello," + this.props.name);
+			}
+
+			render() {
+				return (
+					// 在事件调用时，如果方法里面使用到this，在方法中需要绑定 bind(this)
+					<input type="button" value="打招呼" onClick={this.fnHello.bind(this)} />
+				);
+			}
+		}
+
+		ReactDOM.render(<HelloName name="Rose" />, document.getElementById('root'));
+
+	</script>
+</body>
+</html>
